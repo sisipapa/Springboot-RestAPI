@@ -1,0 +1,85 @@
+# 학생 추가: POST /students
+POST http://localhost:8080/students
+Content-Type: application/json
+
+{
+  "name" : "테스트1"
+  ,"age" : 11
+  ,"schoolType" : "MIDDLE"
+  ,"phoneNumber" : "010-0000-0001"
+}
+
+###
+
+# 학생 조회: GET /students
+GET http://localhost:8080/students
+Accept: application/json
+
+###
+
+# 학생 삭제: DELETE /students/{studentId}
+DELETE http://localhost:8080/students/1
+Accept: application/json
+
+###
+
+# 과목 추가: POST /subjects
+POST http://localhost:8080/subjects
+Content-Type: application/json
+
+{
+  "name" : "수학3"
+}
+
+###
+
+# 과목 조회: GET /subjects
+GET http://localhost:8080/subjects
+Content-Type: application/json
+
+###
+
+# 과목 삭제: DELETE /subjects/{subjectId}
+DELETE http://localhost:8080/subjects/1
+Accept: application/json
+
+###
+
+# 특정 학생, 특정 과목에 점수 할당: POST /students/{studentId}/subjects/{subjectId}/scores
+POST http://localhost:8080/students/2/subjects/2/scores
+Content-Type: application/json
+
+{
+  "score" : 92
+}
+
+###
+
+# 특정 학생, 특정 과목에 점수 수정: PUT /students/{studentId}/subjects/{subjectId}/scores
+PUT http://localhost:8080/students/2/subjects/2/scores
+Content-Type: application/json
+
+{
+  "score" : 100
+}
+
+###
+
+# 특정 학생, 특정 과목에 점수 삭제: DELETE /students/{studentId}/subjects/{subjectId}/scores
+DELETE http://localhost:8080/students/2/subjects/3/scores
+Content-Type: application/json
+
+###
+
+# 특정 학생의 평균 점수 조회: GET /students/{studentId}/average-score
+GET http://localhost:8080/students/2/average-score
+Content-Type: application/json
+
+###
+
+# 특정 과목에 대한 전체 학생들의 평균 점수 조회: GET /subjects/{subjectid}/average-score
+GET http://localhost:8080/subjects/2/average-score
+Content-Type: application/json
+
+
+
