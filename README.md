@@ -1,7 +1,7 @@
 # 1. 실행 방법 및 코드 및 구조에 대한 개요  
 ## 1-1. 실행방법
 ### IDE 툴에서 실행(Intellij 기준)  
-1. checkout : https://github.com/mathflat-dev/20210916_sisipapa.git
+1. checkout : https://github.com/sisipapa/Springboot-RestAPI.git
 2. 화면 우측 Gradle > Tasks > build > clean
 3. Services Springboot 서버 실행
    <img src="https://sisipapa.github.io/assets/images/posts/service-springboot.PNG" >  
