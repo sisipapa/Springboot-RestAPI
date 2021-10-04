@@ -2,10 +2,10 @@
 ## 1-1. 실행방법
 ### IDE 툴에서 실행(Intellij 기준)  
 1. checkout : https://github.com/sisipapa/Springboot-RestAPI.git
-2. 화면 우측 Gradle > Tasks > build > clean
-3. Services Springboot 서버 실행
-   <img src="https://sisipapa.github.io/assets/images/posts/service-springboot.PNG" >  
-4. 서버가 구동되면 아래 두가지 방법 중 하나를 선택해서 테스트 진행
+2. 화면 우측 Gradle > Tasks > build > clean  
+3. Services Springboot 서버 실행  
+   <img src="https://sisipapa.github.io/assets/images/posts/service-springboot.PNG" >    
+4. 서버가 구동되면 아래 두가지 방법 중 하나를 선택해서 테스트 진행  
 - api-requests.http 파일에서 테스트 진행
 - http://localhost:8080/swagger-ui.html
 
